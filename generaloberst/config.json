@@ -7,8 +7,7 @@
 	    "plugins.util",
 	    "plugins.info",
 	    "plugins.minecraft",
-	    "plugins.core",
-	    "plugins.testing"
+	    "plugins.core"
 	],
 	"commands_require_mention": false,
 	"commands_prefix": "!",
