@@ -375,7 +375,10 @@ class UtilitiesPlugin(Plugin):
             dm.send_message(msg)
         else:
             url = 'https://api.paste.ee/v1/pastes'
-            header = {'X-Auth-Token': 'aePM1mOrLrbtdgLkGpINjOjJxr9TAtUz4fKYfnLXW'}
+
+            with open('json/paste_ee.json') as f:
+                header = json.load(f) # Auth Token
+                
             payload = {'sections': [{'contents': msg.strip('```').strip('asciidoc')}]}
             r = requests.post(url, headers=header, json=payload)
             dm.send_message('Pasting to `https://paste.ee` because output is too long: {}'.format(r.json()['link']))
@@ -413,7 +416,10 @@ class UtilitiesPlugin(Plugin):
             dm.send_message(msg)
         else:
             url = 'https://api.paste.ee/v1/pastes'
-            header = {'X-Auth-Token': 'aePM1mOrLrbtdgLkGpINjOjJxr9TAtUz4fKYfnLXW'}
+
+            with open('json/paste_ee.json') as f:
+                header = json.load(f) # Auth Token
+                
             payload = {'sections': [{'contents': msg.strip('```').strip('asciidoc')}]}
             r = requests.post(url, headers=header, json=payload)
             dm.send_message('Pasting to `https://paste.ee` because output is too long: {}'.format(r.json()['link']))
