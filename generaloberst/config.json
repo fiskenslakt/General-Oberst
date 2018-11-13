@@ -1,0 +1,20 @@
+{
+    "token": "secret",
+    "bot": {
+	"plugins": [
+	    "plugins.fun",
+	    "plugins.help",
+	    "plugins.util",
+	    "plugins.info",
+	    "plugins.minecraft",
+	    "plugins.core",
+	    "plugins.testing"
+	],
+	"commands_require_mention": false,
+	"commands_prefix": "!",
+	"commands_allow_edit": true,
+	"levels": {
+	    "secret": 500
+	}
+    }
+}
