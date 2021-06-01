@@ -35,6 +35,6 @@ rsa==3.4.2
 six==1.11.0
 TTFQuery==1.0.5
 typing==3.6.4
-urllib3==1.22
+urllib3==1.26.5
 Wand==0.4.4
 websocket-client==0.44.0
