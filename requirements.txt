@@ -1,7 +1,7 @@
 -e git+git://github.com/b1naryth1ef/disco.git#egg=disco-py
 asn1crypto==0.24.0
 cachetools==2.0.1
-certifi==2018.4.16
+certifi==2022.12.7
 cffi==1.11.5
 chardet==3.0.4
 cryptography>=2.3
